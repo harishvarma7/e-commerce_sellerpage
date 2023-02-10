@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vendorsSidebar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="vendorsSidebar.css" />
+    <script>
+      function changestate(id) {
+        document.getElementById("dashboard").className = "inactive";
+        document.getElementById("addproducts").className = "inactive";
+        document.getElementById("allproducts").className = "inactive";
+        document.getElementById("orderslist").className = "inactive";
+        document.getElementById(id).className = "active inactive";
+      }
+    </script>
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Sidebar -->
+      <nav id="sidebarMenu" class="d-lg-block sidebar">
+        <div class="imgcontainer">
+          <img src="./Assets/userimg.png" class="userimg" />
+          <span>
+            <div class="username">polyjuicemagenta</div>
+            <div class="email">polyjuicemagenta@gmail.com</div>
+          </span>
+        </div>
+        <div class="menucontainer">
+          <div
+            id="dashboard"
+            class="active inactive"
+            style="top: 0px"
+            onclick="changestate('dashboard')"
+          >
+            <img src="./Assets/dashboard.png" class="icons" />
+            <span class="menutxt">Dashboard</span>
+          </div>
+          <div
+            id="addproducts"
+            class="inactive"
+            style="top: 83px"
+            onclick="changestate('addproducts')"
+          >
+            <img src="./Assets/addproducts.png" class="icons" />
+            <span class="menutxt">Add Products</span>
+          </div>
+          <div
+            id="allproducts"
+            class="inactive"
+            style="top: 166px"
+            onclick="changestate('allproducts')"
+          >
+            <img src="./Assets/allproducts.png" class="icons" />
+            <span class="menutxt">All Products</span>
+          </div>
+          <div
+            id="orderslist"
+            class="inactive"
+            style="top: 249px"
+            onclick="changestate('orderslist')"
+          >
+            <img src="./Assets/orderslist.png" class="icons" />
+            <span class="menutxt">Orders List</span>
+          </div>
+        </div>
+      </nav>
+      <!-- Sidebar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main>
+      <div class="container pt-4"></div>
+    </main>
+    <!--Main layout-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

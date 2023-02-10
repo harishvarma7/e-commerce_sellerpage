@@ -1,0 +1,42 @@
+.jest{
+    width:100%;
+    height: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    width:100px;
+    height: auto;
+}
+
+.header-list{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-list>p{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.header-list>p:hover{
+    border-bottom: 3px solid #8C5000;
+    cursor: pointer;
+}
+.avatar-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.avatar-user>span{
+    font-size: small;
+}

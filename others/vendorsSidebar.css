@@ -1,0 +1,117 @@
+.sidebar .imgcontainer {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+}
+
+.userimg {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #b4b3b3;
+}
+
+.username {
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  left: 110px;
+  top: 15px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.email {
+  position: absolute;
+  height: 20px;
+  left: 110px;
+  top: 55px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.icons {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  left: 20px;
+  top: 20px;
+  z-index: 100;
+}
+
+.menutxt {
+  position: absolute;
+  width: 117px;
+  height: 29px;
+  left: 100px;
+  top: 28px;
+  z-index: 100;
+}
+
+.sidebar .menucontainer {
+  position: relative;
+  left: 0px;
+  top: 350px;
+}
+
+.sidebar .menucontainer .active {
+  background: #ff9c1b;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar .menucontainer .inactive {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  width: 335px;
+  height: 2600px;
+  left: 0px;
+  top: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #8c5000;
+  color: #000000;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 320px;
+  }
+
+  .userimg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .username {
+    height: 22px;
+    left: 100px;
+    top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .email {
+    height: 18px;
+    left: 100px;
+    top: 50px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

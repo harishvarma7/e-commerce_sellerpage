@@ -1,0 +1,775 @@
+body{
+    width:100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
+
+/* CSS FOR CONTAINER1 */
+.contact_container1_item1{
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    /* left: 842px;*/
+    margin-top: 100px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+}
+.contact_container1_item2{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    margin: auto;
+    height: 300px;
+    top: 96px;
+    top: 507px;
+    background: #FFF5E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 180px;
+    background: #FFF5E8;
+    border: 1px solid #8C5000;
+    border-radius: 10px;
+}
+.card1{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.card2{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.col-sm-6{
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    height: 24px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.card-text{
+    height: 38px;
+    left: 400px;
+    top: 96px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+
+
+/* MEDIA QUERIES FOR CONTAINER1 */
+@media screen and (max-width:575px) {
+    .card1{
+        margin: 0%;
+        margin-bottom: 30px;
+    }
+    .card2{
+        margin: 0%;
+    }
+    .contact_container1_item2{
+        height: 500px;
+        padding: 10%;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* CSS FOR CHATBOT */
+.chat{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.chatbot{
+   position: absolute;
+   top: 850px;
+   z-index: 1;
+   right: 70px;
+   cursor: pointer;
+}
+/* MEDIA QUERIES FOR CHATBOT */
+@media screen and (max-width:575px) {
+    .chatbot{
+        top: 1050px;
+    }
+}
+
+
+
+
+
+
+/* CSS FOR CONTAINER2 */
+.contact_container2{
+    position: absolute;
+    height: 240px;
+    left: 0px;
+    top: 907px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_container2_item1{
+    position: absolute;
+    height: 21.19px;
+    top:77px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    color: #000000;
+}
+.contact_container2_item2{
+    box-sizing: border-box;
+    position: absolute;
+    width: 228px;
+    height: 56px;
+    top: 138px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.contact_item2_text{
+    position: absolute;
+    width: 184px;
+    height: 24px;
+    left: 22px;
+    top: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+/* MEDIA QUERIES FOR CONTAINER2 */
+@media screen and (max-width:575px) {
+    .contact_container2{
+        top: 1107px;
+    }
+    .contact_container2_item1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .contact_container2_item1{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR CONTAINER3 */
+.contact_container3{
+    Position: absolute;
+    display: flex;
+    top: 1147px;
+    width: 100%;
+    height: 1725px;
+}
+
+/* CSS FOR GET IN TOUCH FORM */
+.container3_item1{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.container3_headertext{
+    position: absolute;
+    height: 62px;
+    top:79px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 62px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.container3_text{
+    position: absolute;
+    top: 160px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+}
+.name_header_text{
+    margin-top: 240px;
+}
+.form-control{
+    margin-top: 10px;
+}
+.formAlltext{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 53px;
+}
+.formtextA1{
+    margin-top: 260px;
+}
+.form-control{
+    height: 79px;
+    background: #FFFFFF;
+    border: 1px solid #FFE2BD;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+}
+.textcontrol{
+    height: 279px;
+}
+.topspace{
+    margin-top: 0;
+    padding-top: 6px;
+    margin-left: 28px;
+}
+.form-check{
+    display: flex;
+    margin-top: 84px;
+}
+.form-check-input{
+    width: 30px;
+    height: 30px;
+    background: #8C5000;
+}
+.viewlink{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: inline;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #8C5000;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.btn-send{
+    position: absolute;
+    width: 327px;
+    height: 79px;
+    background: #8C5000;
+    border-radius: 20px;
+    top: 1230px;
+}
+.btn-text{
+    position: absolute;
+    margin-top: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* CSS FOR PICTURE */
+.container3_item2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.content2{
+    margin-top: 80px;
+    width: 90%;
+    height: 1250px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content2_text{
+    position: absolute;
+    width: 138px;
+    height: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES FOR CONTAINER3 */
+@media screen and (max-width:950px) {
+    .contact_container3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container3_item1{
+       width: 70%;
+    }
+    .container3_item2{
+        width: 70%;
+    }
+    .content2{
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container3_item2{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .contact_container3{
+        top: 1347px;
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+    .container3_headertext{
+        font-size: 40px;
+    }
+    .container3_text{
+        font-size: 20px;
+    }
+    .formAlltext{
+        font-size: 18px;
+    }
+    .viewlink{
+        font-size: 18px;
+    }
+    .btn-send{
+        width: 227px ;
+    }
+    .btn-text{
+        font-size: 28px;
+    }
+    .container3_item2{
+        width: 90%;
+    }
+    .content2{
+        width: 100%;
+        height: 750px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR HEADER COMPONENTS */
+.jest{
+    width:100%;
+    height: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.headerLogo{
+    width:100px;
+    height: auto;
+}
+
+.header-list{
+    display: flex;
+    width:50%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-list>p{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.header-list>p:hover{
+    border-bottom: 3px solid #8C5000;
+    cursor: pointer;
+}
+.avatar-user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+.avatar-user>span{
+    font-size: small;
+}
+
+#user-header-2,#user-header{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid grey;
+}
+#user-header-2{
+    background-color: #8C5000;
+    color: white;
+    height: 80px;
+    font-size: 13px;
+}
+.search-input{
+    width: 40% !important;
+    height: 40px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #9E9E9E;;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS FOR FOOTERS */
+.footer {
+    position: relative;
+    left: 0;
+    margin: 0%;
+    top:2418px;
+    display: flex;
+    width: 100%;
+    height: 584px;
+    background: #8c5000;
+  }
+
+  .footer .content {
+    position: absolute;
+    width: 1358px;
+    height: 404px;
+    left: 101px;
+    top: 70px;
+  }
+
+  .footer .content .tagset {
+    position: absolute;
+    width: 678px;
+    height: 256px;
+    left: 61px;
+    top: 0px;
+  }
+
+  .footer .tagset .realtagset {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 182px;
+    position: absolute;
+    width: 858px;
+    height: 286px;
+    left: -58px;
+    top: 1px;
+  }
+
+  .footer .content .tagset .tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .footer .content .tagset .tags .title {
+    cursor: pointer;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .footer .tagset .realtagset .tagsdata {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 13px;
+    width: 166px;
+    height: 243px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .footer .tagset .realtagset .tagsdata .tagsdatalistitem {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .footer .tagset .realtagset .tagsdata .ekonweb {
+    width: 169px;
+    height: 24px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.7;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .footer .divider {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 71%;
+    bottom: 24.75%;
+    opacity: 0.06;
+    border: 1px solid #ffffff;
+  }
+
+  .footer .logo {
+    width: 170px;
+    height: 166px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    position: absolute;
+    left: 0%;
+    right: 90.33%;
+    top: 75.25%;
+    bottom: -16.34%;
+    background: #7a4600;
+  }
+
+  .footer .privacy {
+    position: absolute;
+    width: 1358px;
+    height: 53px;
+    left: 0px;
+    top: 351px;
+  }
+
+  .footer .privacy .actualprivacy {
+    position: absolute;
+    width: 219px;
+    height: 17px;
+    left: 42%;
+    top: 18px;
+  }
+
+  .footer .privacy .actualprivacy .txt {
+    position: absolute;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .footer .social-media {
+    position: absolute;
+    width: 135px;
+    height: 35px;
+    left: 1223px;
+    top: 360px;
+  }
+
+  .footer .social-media .sociallinks {
+    cursor: pointer;
+    width: 38px;
+    margin-right: auto;
+    border: 1.5px solid rgba(255, 255, 255, 0.1);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+    border-radius: 100%;
+  }
+
+  .footer .social-media .sociallinks i {
+    margin-top: 4px;
+    vertical-align: middle;
+    color: #ffffff;
+    opacity: 1 !important;
+  }
+
+  .footer .registerecomm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0px 30px 42px;
+    gap: 10px;
+    position: absolute;
+    width: 318px;
+    height: 208px;
+    left: 960px;
+    top: 0px;
+    background: #7a4600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .footer .registerecomm .realregisterecomm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+    width: 248px;
+    height: 155px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .footer .registerecommtitle {
+    width: 70px;
+    height: 28px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff !important;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .footer .registerecomm .realregisterecomm .para {
+    width: 220px;
+    height: 41px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+    opacity: 0.7;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+
+  .footer .registerecomm .realregisterecomm .registerecomminput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 15px;
+    gap: 56px;
+    width: 230px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .footer .registerecomm .realregisterecomm .iconcontainer {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    left: 224px;
+    top: 76px;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    background-color: #8c5000;
+  }

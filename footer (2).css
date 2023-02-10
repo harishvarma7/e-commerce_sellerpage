@@ -1,0 +1,316 @@
+#footer {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+#footer .uppertable {
+  margin-left: 80px;
+  margin-right: 70px;
+  margin-top: 60px;
+}
+
+#footer .uppertable td {
+  vertical-align: top;
+  width: 22vw !important;
+}
+
+#footer .bottomsection {
+  margin-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 70px;
+}
+
+#footer .bottomsection td {
+  vertical-align: top;
+}
+
+#footer .bottomsection .terms {
+  margin-top: 50px;
+}
+
+#footer .bottomsection .icon {
+  margin-top: 40px;
+}
+
+#footer .width0 {
+  width: 0px;
+}
+
+#footer .icon td {
+  width: 55px;
+  text-align: center;
+}
+
+#footer .tags {
+  height: max-content;
+  display: inline-table;
+}
+
+#footer .tags hr {
+  display: none;
+}
+
+#footer .displaynone {
+  display: none;
+}
+
+#footer .tagtitle {
+  cursor: pointer;
+  width: max-content;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+#footer .tagdata {
+  cursor: pointer;
+  width: max-content;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-top: 13px;
+}
+
+#footer .ekonweb {
+  margin-top: 11px;
+  height: 24px;
+  width: max-content;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#footer .linetitle {
+  display: none;
+  color: #ffffff;
+  width: 40vw;
+  margin-left: 22vw;
+}
+
+#footer .registerecomm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  padding: 30px 0px 30px 42px;
+  width: 318px;
+  height: 208px;
+  background: #7a4600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+#footer .registerecomm .realregisterecomm {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+  height: 155px;
+}
+
+#footer .registerecommtitle {
+  width: fit-content;
+  height: 28px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff !important;
+}
+
+#footer .registerecomm .realregisterecomm .para {
+  width: 220px;
+  height: 41px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  text-align: left;
+}
+
+#footer .registerecomm .realregisterecomm .registerecomminput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 15px;
+  gap: 56px;
+  width: 230px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+}
+
+#footer .registerecomm .realregisterecomm .iconcontainer {
+  color: #ffffff;
+  cursor: pointer;
+  right: -1px;
+  top: 46px;
+  position: absolute;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #8c5000;
+}
+
+#footer .registerecomm .realregisterecomm .iconcontainer i {
+  position: absolute;
+  margin-left: 32%;
+  margin-top: 10%;
+}
+
+#footer .divider {
+  position: relative;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  opacity: 0.06;
+  border: 1px solid #ffffff;
+  margin-bottom: 0%;
+}
+
+#footer .logo {
+  width: 170px;
+  height: 166px;
+  background: #7a4600;
+}
+
+#footer .txt {
+  width: max-content;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#footer .sociallinks {
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  margin-right: auto;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  border-radius: 100% !important;
+}
+
+#footer .sociallinks i {
+  margin-top: 9px;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+#footer .display840 {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  #footer .uppertable td {
+    width: 20vw !important;
+  }
+}
+
+@media (max-width: 1215px) {
+  #footer .uppertable td {
+    width: 18vw !important;
+  }
+}
+
+@media (max-width: 1060px) {
+  #footer .width0 {
+    width: 400px;
+  }
+
+  #footer .uppertable {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 60px;
+  }
+
+  #footer .uppertable td {
+    width: 28vw !important;
+  }
+
+  #footer .registerecomm {
+    margin-top: 40px;
+  }
+
+  #footer .displayfirst {
+    display: none;
+  }
+
+  #footer .displaynone {
+    display: block;
+  }
+
+  #footer .tagtitle {
+    width: auto;
+    text-align: center;
+  }
+
+  #footer .tagdata {
+    width: auto;
+    text-align: center;
+  }
+
+  #footer .ekonweb {
+    width: auto;
+    text-align: center;
+  }
+
+  #footer .bottomsection .terms {
+    margin-top: 10px;
+  }
+
+  #footer .bottomsection .icon {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 840px) {
+  #footer .uppertable {
+    margin-top: 10px;
+  }
+
+  #footer .uppertable td {
+    margin-left: 0% !important;
+    width: 86vw !important;
+  }
+
+  #footer .tags {
+    margin-top: 40px;
+  }
+
+  #footer .display840 {
+    display: block;
+  }
+
+  #footer .displayopp840 {
+    display: none;
+  }
+
+  #footer .linetitle {
+    display: flex !important;
+  }
+}

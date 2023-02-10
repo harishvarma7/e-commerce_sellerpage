@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AKON test</title>
+    <link rel="stylesheet" href="add_products.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+ <script>
+
+
+      function upload()
+      {
+        const form =document.querySelector("upload_media"),
+        const fileInput=document.querySelector(".image_input");
+
+        form.addEventListener("click", ()=>{
+          fileInput.click();
+        });
+
+      }
+
+
+    </script>
+
+  </head>
+  <body>
+
+
+
+    <div class="topsection">
+
+      <header-component></header-component>
+
+
+  </div>
+
+
+
+        <div class="container-fluid" id="cont">
+
+
+           <div class="side">
+
+
+                <div id="body-pd">
+                  <header class="header" id="header">
+                    <div class="header_toggle" onClick="showNavbar()">
+                      <i class="fa fa-bars" id="header-toggle"></i>
+                    </div>
+                  </header>
+                  <div class="l-navbar" id="nav-bar">
+                    <nav class="nav">
+                      <div class="imgcontainer">
+                        <img src="images/userimg.png" class="userimg" />
+                        <span>
+                          <div class="username">polyjuicemagenta</div>
+                          <div class="email">polyjuicemagenta@gmail.com</div>
+                        </span>
+                      </div>
+                      <div>
+                        <div class="nav_list">
+                          <div
+                            id="dashboard"
+                            class="nav_link"
+                            onclick="changestate('dashboard')"
+                          >
+                            <img src="images/picture7.png" width="33px" height="33px" />
+                            <span class="menutxt">Dashboard</span>
+                          </div>
+                          <div
+                            id="addproducts"
+                            class="nav_link active"
+                            onclick="changestate('addproducts')"
+                          >
+                            <img src="images/picture8.png" class="icons" />
+                            <span class="menutxt">Add Products</span>
+                          </div>
+                          <div
+                            id="allproducts"
+                            class="nav_link"
+                            onclick="changestate('allproducts')"
+                          >
+                            <img src="images/picture9.png" width="33px" height="33px" />
+                            <span class="menutxt">All Products</span>
+                          </div>
+                          <div
+                            id="orderslist"
+                            class="nav_link"
+                            onclick="changestate('orderslist')"
+                          >
+                            <img src="images/picture10.png" width="33px" height="33px"/>
+                            <span class="menutxt">Order Lists</span>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <script src="sidebar.js"></script>
+
+           </div>
+           <!--Add products section  -->
+
+
+
+           <div class="add">
+             <div class="chatbox">
+               <a href="#"><img src="images/chat.png" alt="" height="37px" width="37px"> </a>
+
+             </div>
+             <div class="container">
+               <div class="row">
+
+                 <div class="col-lg-8">
+                   <h2 style="margin-top: 40px"> <b>ADD PRODUCTS</b> </h2>
+                 </div>
+               <!-- checkbox for show in online store -->
+                 <div class="col-lg-3 ">
+                   <div class="jumbotron">
+                     <form class="check1" action="index.html" method="post">
+                       <div class="checkbox">
+                         <div class="check2">
+                           <input type="checkbox" value="">
+                             <label class="checklabel">Show in online store</label>
+                         </div>
+
+                       </div>
+                     </form>
+                   </div>
+
+                 </div>
+
+           <div class="container">
+             <div class="row">
+               <!--Product details -->
+               <div class="col-lg-8">
+                 <div class="jumbotron1">
+                   <h4>Product information</h4>
+                    <hr>
+                    <form class="product_details" action="index.html" method="post">
+                      <div class="form-group  ">
+
+                          <label class="productlabel" for="name">Product Name:</label>
+                          <input type="text" name="name" class="product" >
+
+                        <label class="ribbonlabel" for="ribbon">Ribbon:</label>
+                        <input type="text" name="ribbon" class="ribbon">
+                      </div>
+                     <div class="form-group">
+                       <label for="description" style="padding: 30px 0px 20px 0px;" >Description:</label>
+                       <textarea name="description" rows="8" cols="80"class="form-control"></textarea>
+                    </form>
+                    <hr>
+                    <!-- provision to add additional info -->
+
+                    <h4><button onclick="  window.location.href='add_info.html';" type="button" class="btn btn-basic" id="circular"> <img width="15px" height="15px" src="images/plus.png" alt=""> </button> ADDITIONAL INFORMATION</h4>
+
+                    <p style="font-size:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl pellentesque dictumst sed aliquam volutpat felis.</p>
+                 </div>
+               </div>
+               </div>
+                <div class="col-lg-3">
+                  <!--Upload images $ videos -->
+                  <div class="jumbotron4">
+                    <h5>Images & Videos</h5>
+                    <hr>
+                    <br>
+                    <br>
+                    <form class="upload_media"action="" method="post">
+                      <div class="image_button">
+                        <input type="file" class="image_input" hidden>
+                        <button type="button" class="btn btn-default btn-lg" style="padding-right: 3rem" onclick="upload()" >
+                           <p style="font-size:16px;"><img width="33px" height="33px" src="images/picture1.png" alt="" > ADD IMAGES</p>
+                       </button>
+                     <br>
+                     </div>
+                     <div class="video_button">
+                       <button type="button" class="btn btn-default btn-sm ">
+                                <img width="33px" height="33px" src="images/picture2.png" alt=""> ADD VIDEOS
+                              </button>
+                     </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+             </div>
+
+           </div>
+          <div class="container">
+           <div class="row">
+             <div class="col-lg-8">
+
+               <div class="jumbotron1">
+                 <h4>Pricing</h4>
+                 <hr>
+                 <form class="form-inline" action="/action_page.php">
+                   <div class="form-group">
+                     <div class="tab">
+                       <table class="">
+                         <tr>
+                            <!-- Product pricing input section-->
+                           <td><label for="price" class="pricelabel">Price:</label>
+                           <input type="text" class="price1" name="price" placeholder="$" ></td>
+                           <td class="sale"><div class="form-check form-switch">
+
+                           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                           <label class="form-check-label" for="flexSwitchCheckDefault">Sale</label>
+                           </div></td>
+
+                           <td class="unit">  <div class="form-check form-switch">
+                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck" />
+                               <label class="form-check-label" for="flexSwitchCheck">Show price per unit</label>
+                             </div></td>
+                         </tr>
+                       </table>
+
+                     </div>
+
+                   </div>
+         <div class="form-group">
+           <form class="prices" action="index.html" method="post">
+             <label for="cost_price" class="costprice">Cost Price:</label>
+             <input type="text" class="price" name="cost_price" placeholder="$" >
+
+             <label for="profit" class="profit">Profit:</label>
+             <input type="text" class="price" name="profit" placeholder="$" >
+
+             <label for="margin" class="margin">Margin:</label>
+             <input type="text" class="price" name="margin"  id="margin" placeholder="%" >
+
+           </form>
+            <!--  pricing and profits section-->
+
+
+         </div>
+
+
+         </div>
+         <div class="">
+           <div class="row">
+             <div class="col-lg-6">
+               <div class="jumbotron2">
+                 <div class="a">
+                   <h5>Product options</h5>
+                   <hr>
+                   <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl pellentesque dictumst sed aliquam volutpat felis.</p>
+
+
+                     <p><button onclick="  window.location.href='add_options.html';" type="button"  class="btn btn-basic" id="circular1"><img height="15px" width="15px"src="images/plus.png" alt=""></button>Add options</p>
+                 </div>
+               </div>
+
+
+             </div>
+             <div class="col-lg-6">
+
+                 <div class="inventory">
+
+                   <h5>Inventory and shipping</h5>
+                   <hr>
+                   <form class="form-group" action="index.html" method="post">
+
+                      <!-- input for inventory and shipping parameters-->
+                     <div class="form-group">
+                       <label for="status" class="status">Status:</label>
+                       <input type="text" name="status" class="ship" placeholder="$">
+                     </div>
+
+                     <div class="form-group">
+                       <label for="sku" class="sku">SKU:</label>
+                       <input type="text" name="sku" class="ship" placeholder="$">
+                     </div>
+                     <div class="form-group">
+                       <label for="weight" class="weight">Shipping Weight:</label>
+                       <input type="text" name="weight" class="ship" id="margin" placeholder="kg">
+                     </div>
+                     <div class="form-check form-switch">
+
+                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                     <label class="form-check-label" for="flexSwitchCheckDefault">Inventory</label>
+                     </div>
+
+                   </form>
+
+
+               </div>
+               </div>
+
+           </div>
+
+         </div>
+
+         </div>
+
+         <div class="col-lg-3 end">
+           <div class="jumbotron3">
+             <h5>Collections</h5>
+             <hr>
+             <br>
+             <form class="collections" action="index.html" method="post">
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check"> All Products</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input  type="checkbox" >
+                 <label class="check"> Lorem ispum dolor</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check"> Suspendisse magna porta</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check"> Phasellus morbi lobortis</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check"> Tristique posuere sagittis</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check">Tortor porta</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input type="checkbox" >
+                 <label class="check"> Naque, sapien</label>
+               </div>
+               <br>
+               <div class="checkbox">
+                 <input  type="checkbox" >
+                 <label class="check"> Naque, sapien</label>
+               </div>
+             </form>
+
+             <br>
+           </div>
+
+         </div>
+
+           </div>
+           <button type="button" name="duplicate" class="btn" id="duplicate">Save & Duplicate</button>
+           <button type="button" name="save" class="btn" id="save">Save</button>
+           <button type="button" name="cancel" class="btn btn-basic" id="cancel"> Cancel</button>
+
+           </div>
+
+
+                <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                  crossorigin="anonymous"
+                ></script>
+
+               </div>
+               </div>
+
+             </div>
+
+
+</div>
+<footer id="footer" style="background-color: #A96308;">
+      <table class="uppertable">
+        <tbody>
+          <tr class="uppercomponent">
+            <td class="tags">
+              <div class="tagtitle">Product</div>
+              <hr class="linetitle" />
+              <div class="tagdata">Fashion & Beauty</div>
+              <div class="tagdata">Sports & Fitness</div>
+              <div class="tagdata">Daily Essentials</div>
+              <div class="tagdata">Books</div>
+              <div class="tagdata">Indian Sweets & Snaks</div>
+              <div class="tagdata">Home & Appliances</div>
+              <div class="tagdata">Garden & Outdoor</div>
+              <div class="tagdata">Toys & Baby Products</div>
+            </td>
+            <td class="tags">
+              <div class="tagtitle">Information</div>
+              <hr class="linetitle" />
+              <div class="tagdata">FAQs</div>
+              <div class="tagdata">Payment Methods</div>
+              <div class="ekonweb">www.akongroup.in</div>
+            </td>
+            <td class="tags">
+              <div class="tagtitle">Company</div>
+              <hr class="linetitle" />
+              <div class="tagdata">Home</div>
+              <div class="tagdata">About Us</div>
+              <div class="tagdata">Contact Us</div>
+              <div class="tagdata">Track Your Order</div>
+            </td>
+            <td class="tags displayfirst">
+              <div class="registerecomm">
+                <div class="realregisterecomm">
+                  <div class="registerecommtitle">Subscribe</div>
+                  <input
+                    class="registerecomminput"
+                    value="Email address"
+                    style="height: 50px"
+                  />
+                  <div class="iconcontainer">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                  <div class="para">
+                    Subscribe to get first dibs on the new launches, sales and
+                    much more!
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align: center" class="tags display840">
+              <div class="d-flex justify-content-center">
+                <div class="registerecomm" style="margin-top: 0px;">
+                  <div class="realregisterecomm">
+                    <div class="registerecommtitle">Subscribe</div>
+                    <input
+                      class="registerecomminput"
+                      value="Email address"
+                      style="height: 50px"
+                    />
+                    <div class="iconcontainer">
+                      <i class="fa fa-angle-right" style="right: 15px;"></i>
+                    </div>
+                    <div class="para">
+                      Subscribe to get first dibs on the new launches, sales and
+                      much more!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="./Assets/logo.png"
+                class="logo"
+                style="margin-top: 15px"
+              />
+              <table class="terms d-flex justify-content-center">
+                <tbody
+                  style="width: 200px; margin-top: 15px; margin-left: 17px"
+                >
+                  <tr>
+                    <td>
+                      <div class="txt">Terms</div>
+                    </td>
+                    <td>
+                      <div class="txt">Privacy</div>
+                    </td>
+                    <td>
+                      <div class="txt">Cookie</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="icon d-flex justify-content-center">
+                <tbody
+                  style="width: 200px; margin-top: 15px; margin-left: 17px"
+                >
+                  <tr>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-linkedin"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-facebook"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <img
+                          src="./Assets/git.png"
+                          height="25px"
+                          style="margin-top: 6px; margin-left: 3px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="divider displayopp840" />
+      <table class="bottomsection">
+        <tbody>
+          <tr>
+            <td class="displaynone displayopp840">
+              <div class="registerecomm" style="margin-top: 0%">
+                <hr style="color: #ffff !important" />
+                <div class="realregisterecomm">
+                  <div class="registerecommtitle">Subscribe</div>
+                  <input
+                    class="registerecomminput"
+                    value="Email address"
+                    style="height: 50px"
+                  />
+                  <div class="iconcontainer">
+                    <i class="fa fa-angle-right"></i>
+                  </div>
+                  <div class="para">
+                    Subscribe to get first dibs on the new launches, sales and
+                    much more!
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="width0"></td>
+            <td style="width: 170px" class="displayopp840">
+              <img src="images/foot_logo.png" class="logo" />
+              <table
+                class="terms displaynone"
+                style="margin-left: auto; margin-right: auto"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 100px"><div class="txt">Terms</div></td>
+                    <td style="width: 100px"><div class="txt">Privacy</div></td>
+                    <td style="width: 100px"><div class="txt">Cookie</div></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="icon displaynone">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-linkedin"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-facebook"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <img
+                          src="images/social.png"
+                          height="25px"
+                          style="margin-top: 6px; margin-left: 3px;"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td style="width: 1050px" class="displayfirst">
+              <table
+                class="terms"
+                style="margin-left: auto; margin-right: auto"
+              >
+                <tbody>
+                  <tr>
+                    <td style="width: 100px"><div class="txt">Terms</div></td>
+                    <td style="width: 100px"><div class="txt">Privacy</div></td>
+                    <td style="width: 100px"><div class="txt">Cookie</div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            <td style="width: 140px" class="displayfirst">
+              <table class="icon">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-linkedin"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <i class="fa fa-facebook"> </i>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="sociallinks">
+                        <img
+                          src="images/social.png"
+                          height="25px"
+                          style="margin-top: 6px; margin-left: 3px"
+                        />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+
+
+    <script src="footer(1).js"></script>
+<script src="customElements.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AKON</title>
+    <link rel="stylesheet" href="add_products.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+      function changestate(id) {
+        document.getElementById("dashboard").className = "inactive";
+        document.getElementById("addproducts").className = "inactive";
+        document.getElementById("allproducts").className = "inactive";
+        document.getElementById("orderslist").className = "inactive";
+        document.getElementById(id).className = "active inactive";
+      }
+    </script>
+  </head>
+  <body>
+
+        <div class="container-fluid">
+          <div class="">
+           <div class="">
+             <!--Main Navigation-->
+             <header>
+               <!-- Sidebar -->
+               <nav id="sidebarMenu" class="d-lg-block sidebar">
+                 <div class="imgcontainer">
+                   <img src="images/userimg.png" class="userimg" />
+                   <span>
+                     <div class="username">polyjuicemagenta</div>
+                     <div class="email">polyjuicemagenta@gmail.com</div>
+                   </span>
+                 </div>
+                 <div class="menucontainer">
+                   <div
+                     id="dashboard"
+                     class="active inactive"
+                     style="top: 0px"
+                     onclick="changestate('dashboard')"
+                   >
+                     <img src="images/picture7.png" class="icons" />
+                     <span class="menutxt">Dashboard</span>
+                   </div>
+                   <div
+                     id="addproducts"
+                     class="inactive"
+                     style="top: 83px"
+                     onclick="changestate('addproducts')"
+                   >
+                     <img src="images/picture8.png" class="icons" />
+                     <span class="menutxt">Add Products</span>
+                   </div>
+                   <div
+                     id="allproducts"
+                     class="inactive"
+                     style="top: 166px"
+                     onclick="changestate('allproducts')"
+                   >
+                     <img src="images/picture9.png" class="icons" />
+                     <span class="menutxt">All Products</span>
+                   </div>
+                   <div
+                     id="orderslist"
+                     class="inactive"
+                     style="top: 249px"
+                     onclick="changestate('orderslist')"
+                   >
+                     <img src="images/picture10.png" class="icons" />
+                     <span class="menutxt">Orders List</span>
+                   </div>
+                 </div>
+               </nav>
+               <!-- Sidebar -->
+             </header>
+             <!--Main Navigation-->
+
+             <!--Main layout-->
+             <main>
+               <div class="container pt-4"></div>
+             </main>
+             <!--Main layout-->
+           </div>
+           <!--Add products section  -->
+           <div class="add">
+             <div class="container">
+               <div class="row">
+                 <div class="col-lg-7">
+                   <h2 style="margin-top: 40px"> <b>ADD PRODUCT</b> </h2>
+                 </div>
+               <!-- checkbox for show in online store -->
+                 <div class="col-lg-2">
+                   <div class="jumbotron">
+                     <form class="check1" action="index.html" method="post">
+                       <div class="checkbox">
+                         <div class="check2">
+                             <label ><input type="checkbox" value="">Show in online store</label>
+                         </div>
+
+                       </div>
+                     </form>
+                   </div>
+
+                 </div>
+
+
+
+           <div class="container">
+             <div class="row">
+               <!--Product details -->
+               <div class="col-lg-7">
+                 <div class="jumbotron1">
+                   <h4>Product information</h4>
+                    <hr>
+                    <form class="product_details" action="index.html" method="post">
+                      <div class="form-group  ">
+
+                          <label class="productlabel" for="name">Product Name:</label>
+                          <input type="text" name="name" class="product" >
+
+                        <label class="ribbonlabel" for="ribbon">Ribbon:</label>
+                        <input type="text" name="ribbon" class="ribbon">
+                      </div>
+                     <div class="form-group">
+                       <label for="description" style="padding-top:30px;">Description:</label>
+                       <textarea name="name" rows="8" cols="80"class="form-control"></textarea>
+                    </form>
+                    <hr>
+                    <!-- provision to add additional info -->
+                    <h4><button type="button" class="btn btn-basic" id="circular">+</button> ADDITIONAL INFORMATION</h4>
+
+                    <p style="font-size:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl pellentesque dictumst sed aliquam volutpat felis.</p>
+                 </div>
+               </div>
+               </div>
+                <div class="col-lg-3">
+                  <!--Upload images $ videos -->
+                  <div class="jumbotron4">
+                    <h5>Images & Videos</h5>
+                    <hr>
+                    <br>
+                    <br>
+                    <div class="image_button">
+                      <button type="button" class="btn btn-default btn-lg" style="padding-right: 3rem" >
+                     <img width="33px" height="33px" src="images/picture1.png" alt=""> ADD IMAGES</button>
+                   <br>
+                   </div>
+                   <div class="video_button">
+                     <button type="button" class="btn btn-default btn-sm ">
+                              <img width="33px" height="33px" src="images/picture2.png" alt=""> ADD VIDEOS
+                            </button>
+                   </div>
+
+                  </div>
+
+                </div>
+             </div>
+
+           </div>
+          <div class="container">
+           <div class="row">
+             <div class="col-lg-7">
+
+               <div class="jumbotron1">
+                 <h4>Pricing</h4>
+                 <hr>
+                 <form class="form-inline" action="/action_page.php">
+                   <div class="form-group">
+                     <div class="tab">
+                       <table class="">
+                         <tr>
+                            <!-- Product pricing input section-->
+                           <td><label for="price" class="pricelabel">Price:</label>
+                           <input type="text" class="price1" name="price" placeholder="$" ></td>
+                           <td class="sale"><div class="form-check form-switch">
+
+                           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                           <label class="form-check-label" for="flexSwitchCheckDefault">Sale</label>
+                           </div></td>
+
+                           <td class="unit">  <div class="form-check form-switch">
+                               <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck" />
+                               <label class="form-check-label" for="flexSwitchCheck">Show price per unit</label>
+                             </div></td>
+                         </tr>
+                       </table>
+
+                     </div>
+
+                   </div>
+         <div class="form-group">
+            <!--  pricing and profits section-->
+           <label for="cost_price" class="costprice">Cost Price:</label>
+           <input type="text" class="price" name="cost_price" placeholder="$" >
+
+           <label for="profit" class="profit">Profit:</label>
+           <input type="text" class="price" name="profit" placeholder="$" >
+
+           <label for="margin" class="margin">Margin:</label>
+           <input type="text" class="price" name="margin" placeholder="                  %" >
+
+
+         </div>
+
+
+         </div>
+         <div class="">
+           <div class="row">
+             <div class="col-lg-6">
+               <div class="jumbotron2">
+                 <div class="a">
+                   <h5>Product options</h5>
+                   <hr>
+                   <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl pellentesque dictumst sed aliquam volutpat felis.</p>
+                   <p><button type="button"  class="btn btn-basic" id="circular1">+</button>Add options</p>
+                 </div>
+               </div>
+
+
+             </div>
+             <div class="col-lg-6">
+
+                 <div class="inventory">
+
+                   <h5>Inventory and shipping</h5>
+                   <hr>
+                   <form class="form-group" action="index.html" method="post">
+
+                      <!-- input for inventory and shipping parameters-->
+                     <div class="form-group">
+                       <label for="status" class="status">Status:</label>
+                       <input type="text" name="status" class="ship" placeholder="$">
+                     </div>
+
+                     <div class="form-group">
+                       <label for="sku" class="sku">SKU:</label>
+                       <input type="text" name="" class="ship" placeholder="$">
+                     </div>
+                     <div class="form-group">
+                       <label for="weight" class="weight">Shipping Weight:</label>
+                       <input type="text" name="weight" class="ship" placeholder="kg">
+                     </div>
+                     <div class="form-check form-switch">
+
+                     <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                     <label class="form-check-label" for="flexSwitchCheckDefault">Inventory</label>
+                     </div>
+
+                   </form>
+
+
+               </div>
+               </div>
+
+           </div>
+
+         </div>
+
+         </div>
+
+         <div class="col-lg-3">
+           <div class="jumbotron3">
+             <h5>Collections</h5>
+             <hr>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check"> All Products</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input  type="checkbox" >
+               <label class="check"> Lorem ispum dolor</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check"> Suspendisse magna porta</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check"> Phasellus morbi lobortis</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check"> Tristique posuere sagittis</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check">Tortor porta</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input type="checkbox" >
+               <label class="check"> Naque, sapien</label>
+             </div>
+             <br>
+             <div class="checkbox">
+               <input  type="checkbox" >
+               <label class="check"> Naque, sapien</label>
+             </div>
+             <br>
+           </div>
+
+         </div>
+
+           </div>
+           <button type="button" name="duplicate" class="btn" id="duplicate">Save & Duplicate</button>
+           <button type="button" name="save" class="btn" id="save">Save</button>
+           <button type="button" name="cancel" class="btn btn-basic" id="cancel"> Cancel</button>
+
+           </div>
+               </div>
+               </div>
+
+             </div>
+
+
+  </div>
+</div>
+
+
+
+     <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+       crossorigin="anonymous"
+     ></script>
+  </body>
+
+</html>

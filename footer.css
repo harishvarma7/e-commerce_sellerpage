@@ -1,0 +1,266 @@
+.footer {
+  position: absolute;
+  left: 0;
+  margin: 0%;
+  display: flex;
+  width: 100%;
+  height: 584px;
+  background: #8c5000;
+}
+
+.footer .content {
+  position: absolute;
+  width: 1358px;
+  height: 404px;
+  left: 101px;
+  top: 70px;
+}
+
+.footer .content .tagset {
+  position: absolute;
+  width: 678px;
+  height: 256px;
+  left: 61px;
+  top: 0px;
+}
+
+.footer .tagset .realtagset {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 182px;
+  position: absolute;
+  width: 858px;
+  height: 286px;
+  left: -58px;
+  top: 1px;
+}
+
+.footer .content .tagset .tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.footer .content .tagset .tags .title {
+  cursor: pointer;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer .tagset .realtagset .tagsdata {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 13px;
+  width: 166px;
+  height: 243px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.footer .tagset .realtagset .tagsdata .tagsdatalistitem {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.7;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer .tagset .realtagset .tagsdata .ekonweb {
+  width: 169px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.footer .divider {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 71%;
+  bottom: 24.75%;
+  opacity: 0.06;
+  border: 1px solid #ffffff;
+}
+
+.footer .logo {
+  width: 170px;
+  height: 166px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: absolute;
+  left: 0%;
+  right: 90.33%;
+  top: 75.25%;
+  bottom: -16.34%;
+  background: #7a4600;
+}
+
+.footer .privacy {
+  position: absolute;
+  width: 1358px;
+  height: 53px;
+  left: 0px;
+  top: 351px;
+}
+
+.footer .privacy .actualprivacy {
+  position: absolute;
+  width: 219px;
+  height: 17px;
+  left: 42%;
+  top: 18px;
+}
+
+.footer .privacy .actualprivacy .txt {
+  position: absolute;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer .social-media {
+  position: absolute;
+  width: 135px;
+  height: 35px;
+  left: 1223px;
+  top: 360px;
+}
+
+.footer .social-media .sociallinks {
+  cursor: pointer;
+  width: 38px;
+  margin-right: auto;
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box;
+  border-radius: 100%;
+}
+
+.footer .social-media .sociallinks i {
+  margin-top: 4px;
+  vertical-align: middle;
+  color: #ffffff;
+  opacity: 1 !important;
+}
+
+.footer .registerecomm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0px 30px 42px;
+  gap: 10px;
+  position: absolute;
+  width: 318px;
+  height: 208px;
+  left: 960px;
+  top: 0px;
+  background: #7a4600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer .registerecomm .realregisterecomm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 18px;
+  width: 248px;
+  height: 155px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer .registerecommtitle {
+  width: 70px;
+  height: 28px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff !important;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer .registerecomm .realregisterecomm .para {
+  width: 220px;
+  height: 41px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.footer .registerecomm .realregisterecomm .registerecomminput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 15px;
+  gap: 56px;
+  width: 230px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.footer .registerecomm .realregisterecomm .iconcontainer {
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  left: 224px;
+  top: 76px;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #8c5000;
+}
